@@ -1,0 +1,4 @@
+Desert,Hot and dry sandy areas with little vegetation.
+Rain Forest,Lush green forests with high rainfall and diverse wildlife.
+Mountain,High altitude areas with steep slopes and rocky terrain.
+Savanna,Large open grasslands with scattered trees and bushes

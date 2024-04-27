@@ -1,0 +1,3 @@
+zookeeper1,zookeeperpass1
+zookeeper2,zookeeperpass2
+zookeeper3,zookeeperpass3

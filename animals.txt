@@ -1,0 +1,13 @@
+Lion,Savanna,Carnivore,Lions are large carnivorous mammals known for their distinctive manes.
+Elephant,Savanna,Herbivore,African elephants are the largest land animals. They are known for their long trunks.
+Giraffe,Savanna,Herbivore,Giraffes are known for their long necks and spotted coat patterns.
+Cheetah,Savanna,Carnivore,Cheetahs are the fastest land animals, known for their speed and spotted coat patterns.
+Zebra,Savanna,Herbivore,Zebras are known for their distinctive black and white stripes.
+Hippo,Rain Forest,Herbivore,Hippos are large, mostly herbivorous mammals known for their barrel-shaped bodies and semiaquatic habitats.
+Tiger,Rain Forest,Carnivore,Tigers are large carnivorous cats known for their orange fur with black stripes.
+Monkey,Rain Forest,Omnivore,Monkeys are primates known for their dexterous hands and tree-dwelling lifestyles.
+Sloth,Rain Forest,Herbivore,Sloths are slow-moving, arboreal mammals known for their relaxed lifestyles.
+Bear,Mountain,Omnivore,Bears are large mammals known for their stocky build and omnivorous diet.
+Goat,Mountain,Herbivore,Goats are domesticated mammals known for their wool and meat.
+Fox,Mountain,Carnivore,Foxes are small carnivorous mammals known for their bushy tails and cunning behavior.
+Wolf,Mountain,Carnivore,Wolves are carnivorous mammals known for their social behavior and distinctive howls.
