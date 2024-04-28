@@ -11,3 +11,9 @@ Bear,Mountain,Omnivore,Bears are large mammals known for their stocky build and 
 Goat,Mountain,Herbivore,Goats are domesticated mammals known for their wool and meat.
 Fox,Mountain,Carnivore,Foxes are small carnivorous mammals known for their bushy tails and cunning behavior.
 Wolf,Mountain,Carnivore,Wolves are carnivorous mammals known for their social behavior and distinctive howls.
+Camel,Desert,Herbivore,Camels are well-adapted to desert life with features such as humps for storing fat and long eyelashes to protect against sand.
+Roadrunner,Desert,Carnivore,Roadrunners are fast-running birds found in North and Central American deserts.
+Jackrabbit,Desert,Herbivore,Desert bighorn sheep are large mammals adapted to arid environments, found in desert regions of North America.
+Gazelle,Desert,Herbivore,Gazelles are antelope species found in various desert regions of Africa and Asia.
+FennecFox,Desert,Omnivore,Fennec foxes are small nocturnal foxes with large ears that help dissipate heat.
+SnowLeopard,Mountain,Carnivore,A large cat native to mountain ranges in Central and South Asia. Known for its thick fur and elusive nature.
