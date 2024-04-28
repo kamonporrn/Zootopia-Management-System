@@ -12,7 +12,7 @@ public class AnimalViewer {
     public static void viewAnimalsInZone(String zoneName, Scanner scanner) {
         if (scanner == null) {
             System.out.println();
-            return; // ออกจากเมทอดถ้า scanner เป็น null
+            return; // Exit the method if scanner is null.
         }
         
         System.out.println("==== Animals in " + zoneName + " ====");
@@ -27,12 +27,12 @@ public class AnimalViewer {
         System.out.print("Enter the number of the animal to view details (or enter 0 to go back to zone selection): ");
         int animalChoice = scanner.nextInt();
         if (animalChoice == 0) {
-            // ถ้าผู้ใช้ป้อน 0 กลับไปที่เมนูเลือกโซน
+            // If the user enters 0, returns to the zone selection menu.
             return;
         }
         if (animalChoice >= 1 && animalChoice <= animals.size()) {
             String selectedAnimal = animals.get(animalChoice - 1);
-            AnimalInfoViewer.viewAnimalInfo(selectedAnimal, zoneName); // ส่งข้อมูลไปยัง AnimalInfoViewer
+            AnimalInfoViewer.viewAnimalInfo(selectedAnimal, zoneName); // Send information to AnimalInfoViewer
         } else {
             System.out.println("Invalid choice.");
         }

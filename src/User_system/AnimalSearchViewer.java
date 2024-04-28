@@ -13,18 +13,18 @@ public class AnimalSearchViewer {
         do {
             System.out.println("===== Searching animal name =====");
             System.out.print("Enter the name of the animal you want to view (or enter 0 to go back): ");
-            String userInput = scanner.next(); // ใช้ next() เพื่ออ่านคำอย่างเดียว
+            String userInput = scanner.next(); // Use next() to read words only.
             if (userInput.equals("0")) {
-                break; // ออกจากลูปเมื่อผู้ใช้ป้อน 0
+                break; // Exit the loop when the user enters 0.
             } else {
-                scanner.nextLine(); // กล่าวถึงช่องว่างหลังจาก next() ถูกเรียกใช้
-                String animalName = userInput.trim(); // ตัดช่องว่างด้านหน้าและด้านหลัง
-                // เรียกเมทอดเพื่อแสดงข้อมูลสัตว์
+                scanner.nextLine(); // Mentions the space after next() is called.
+                String animalName = userInput.trim(); // Cut out the space at the front and back.
+                // Call method to display animal information.
                 displayAnimalInfo(animalName);
             }
         } while (true);
 
-        // เมื่อผู้ใช้ป้อน 0 กลับไปยังเมนูหลัก
+        // When the user enters 0, returns to the main menu.
         Main.userMenu();
     }
     

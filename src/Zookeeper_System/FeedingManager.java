@@ -60,7 +60,7 @@ public class FeedingManager {
 
     private void removeFood() {
         System.out.print("Enter food name to remove: ");
-        scanner.nextLine(); // ล้าง white space ด้านหน้าและด้านหลัง
+        scanner.nextLine(); // Clear white space at the front and back.
         String foodName = scanner.nextLine();
         removeFoodFromFile(foodName);
     }
@@ -77,15 +77,15 @@ public class FeedingManager {
             String currentLine;
     
             while ((currentLine = reader.readLine()) != null) {
-                // เช็คว่าบรรทัดปัจจุบันมีชื่ออาหารที่ต้องการลบหรือไม่
+                // Check if the current line contains the name of the food you want to delete.
                 if (!currentLine.contains(lineToRemove)) {
-                    writer.write(currentLine + System.getProperty("line.separator")); // เขียนข้อมูลลงใน temp file
+                    writer.write(currentLine + System.getProperty("line.separator")); // Write data to temp file
                 }
             }
             writer.close();
             reader.close();
             
-            // ลบไฟล์เดิมและเปลี่ยนชื่อไฟล์ temp เป็นชื่อไฟล์เดิม
+            // Delete the original file and rename the temp file to the original file name.
             if (file.delete()) {
                 tempFile.renameTo(file);
                 System.out.println("Food '" + foodName + "' removed successfully.");

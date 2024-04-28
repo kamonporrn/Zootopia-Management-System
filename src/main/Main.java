@@ -20,14 +20,14 @@ public class Main {
     public static void login() {
         System.out.println("==== Zootopia ====");
         System.out.print("Username: ");
-        String username = scanner.next(); // ใช้ next() แทน nextLine()
+        String username = scanner.next(); // Use next() instead of nextLine()
         System.out.print("Password: ");
-        String password = scanner.next(); // ใช้ next() แทน nextLine()
-        scanner.nextLine(); // เพื่อล้างค่า newline
+        String password = scanner.next(); // Use next() instead of nextLine()
+        scanner.nextLine(); // to clear newline value
         System.out.println("==================");
         System.out.println();
         
-        // เช็ค username และ password
+        // Check username and password
         if (isUser(username, password)) {
             userMenu();
         } else if (isZookeeper(username, password)) {
@@ -39,7 +39,7 @@ public class Main {
     }
 
     public static boolean isUser(String username, String password) {
-        // อ่านจากไฟล์หรือฐานข้อมูล เช็คว่า username และ password ตรงกับข้อมูลผู้ใช้หรือไม่
+        // Read from file or database, check whether username and password match user information or not.
         try {
             File file = new File("users.txt");
             Scanner fileScanner = new Scanner(file);
@@ -54,11 +54,11 @@ public class Main {
             System.out.println("Error: File not found.");
             e.printStackTrace();
         }
-        return false; // แก้โค้ดตรงนี้ให้ตรวจสอบจากข้อมูลที่เก็บ
+        return false; // To fix the code here, check it from the collected data.
     }
 
     public static boolean isZookeeper(String username, String password) {
-        // อ่านจากไฟล์หรือฐานข้อมูล เช็คว่า username และ password ตรงกับข้อมูล Zookeeper หรือไม่
+        // Read from a file or database. Check if the username and password match the Zookeeper information.
         try {
             File file = new File("zookeepers.txt");
             Scanner fileScanner = new Scanner(file);
@@ -73,7 +73,7 @@ public class Main {
             System.out.println("Error: File not found.");
             e.printStackTrace();
         }
-        return false; // แก้โค้ดตรงนี้ให้ตรวจสอบจากข้อมูลที่เก็บ
+        return false; // To fix the code here, check it from the collected data.
     }
 
     public static void userMenu() {
@@ -87,7 +87,7 @@ public class Main {
         int choice = scanner.nextInt();
         System.out.println();
 
-        // จัดการตามเมนูที่ผู้ใช้เลือก
+        // Manage according to the menu selected by the user.
         switch (choice) {
             case 1:
                 Zone.viewZonesMenu(scanner);

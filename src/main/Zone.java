@@ -59,6 +59,6 @@ public class Zone {
     }
 
     private static void viewAnimalsInZone(String zoneName, Scanner scanner) {
-        AnimalViewer.viewAnimalsInZone(zoneName, scanner); // ส่ง scanner ไปด้วย
+        AnimalViewer.viewAnimalsInZone(zoneName, scanner); // Send the scanner along.
     }
 }
