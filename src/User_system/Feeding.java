@@ -45,8 +45,8 @@ public class Feeding {
 
     private static void feedInZone(String zoneName) {
         System.out.println("==== Feeding in " + zoneName + " ====");
-        showAnimalsInZone(zoneName); // แสดงลิสต์ของสัตว์ในโซน
-        // เมื่อแสดงลิสต์เสร็จแล้วให้เรียกเมทอด selectAnimal เพื่อให้ผู้ใช้เลือกสัตว์
+        showAnimalsInZone(zoneName); // Show a list of animals in the zone.
+        // When the list is finished, call the selectAnimal method to allow the user to select an animal.
         selectAnimal(zoneName);
     }
 
@@ -91,24 +91,24 @@ public class Feeding {
         scanner.nextLine(); // Consume newline character
         
         if (choice == 0) {
-            selectZone(); // กลับไปเลือกโซนอีกครั้ง
+            selectZone(); // กGo back and select the zone again.
         } else {
             ArrayList<String> animals = getAnimalsInZone(zoneName);
             if (choice >= 1 && choice <= animals.size()) {
                 String selectedAnimal = animals.get(choice - 1);
-                feedAnimal(selectedAnimal, zoneName); // นำสัตว์ที่เลือกไปให้อาหาร
+                feedAnimal(selectedAnimal, zoneName); // Take the chosen animal to feed.
             } else {
                 System.out.println("Invalid choice. Please try again.");
-                selectAnimal(zoneName); // เรียกเมทอดนี้ใหม่หากผู้ใช้ใส่ตัวเลขที่ไม่ถูกต้อง
+                selectAnimal(zoneName); // Recall this method if the user enters an incorrect number.
             }
         }
     }
     
     private static void feedAnimal(String animalName, String zoneName) {
         System.out.println("Feeding " + animalName + " in " + zoneName);
-        // เมื่อผู้ใช้เลือกสัตว์แล้ว ให้แสดงลิสต์ประเภทอาหาร
+        // When the user selects an animal Show a list of food types.
         showFoodList();
-        // และเรียกใช้เมทอด selectFoodType เพื่อให้ผู้ใช้เลือกประเภทอาหาร
+        // and call the method selectFoodType To allow the user to choose the type of food
         selectFood(animalName, zoneName);
     }
 
@@ -141,7 +141,7 @@ public class Feeding {
                 selectFood(animalName, zoneName);
             }else {
                 System.out.println("Thank you for feeding the animal in Zootopia.");
-                selectAnimal(zoneName); // รีเทิร์นไปที่การเลือกสัตว์ในโซน
+                selectAnimal(zoneName); // Return to selecting the animal in the zone.
             }
         }
     }
@@ -155,7 +155,7 @@ public class Feeding {
                 String[] data = line.split(",");
                 if (data[0].equalsIgnoreCase(foodName)) {
                     System.out.println("Feeding " + animalName + " with " + foodName);
-                    // ทำตามความต้องการ เช่น เพิ่มการนับปริมาณ หรือบันทึกลงไฟล์
+                    // Follow the needs, such as increasing the quantity count. or save to file
                     scanner.close();
                     return true;
                 }

@@ -26,7 +26,7 @@ public class AnimalInfoViewer {
                     System.out.println("Animal type: " + type);
                     System.out.println("Description: " + description);
                     System.out.println("*************************");
-                    break; // เมื่อพบสัตว์ที่ต้องการแล้ว จบการทำงาน
+                    break; // When the desired animal is found, the work is completed.
                 }
             }
             scanner.close();
@@ -35,7 +35,7 @@ public class AnimalInfoViewer {
             e.printStackTrace();
         }
 
-        // กลับไปที่หน้าแสดงรายการสัตว์ในโซน
+        // Return to the page showing the list of animals in the zone.
         AnimalViewer.viewAnimalsInZone(zoneName, null);
     }
 }
