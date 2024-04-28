@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import main.Main;
+
 public class Feeding {
     private static Scanner scanner = new Scanner(System.in);
 
@@ -35,7 +37,7 @@ public class Feeding {
                 break;
             case 5:
                 System.out.println("Back to main menu.");
-                break;
+                Main.userMenu();
             default:
                 System.out.println("Invalid choice. Please try again.");
                 selectZone();

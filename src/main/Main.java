@@ -77,6 +77,8 @@ public class Main {
     }
 
     public static void userMenu() {
+        int choice;
+        do{
         System.out.println("==== Zootopia System ====");
         System.out.println("1. View animals in a zone");
         System.out.println("2. View animals by searching name");
@@ -84,7 +86,7 @@ public class Main {
         System.out.println("4. Logout");
         System.out.println("===========================");
         System.out.print("Enter your choice (1 - 4): ");
-        int choice = scanner.nextInt();
+        choice = scanner.nextInt();
         System.out.println();
 
         // Manage according to the menu selected by the user.
@@ -104,7 +106,8 @@ public class Main {
             default:
                 System.out.println("Invalid choice. Please try again.");
                 userMenu();
-        }
+            } 
+        }while (choice != 4);
     }
 
     public static void zookeeperMenu() {
@@ -138,6 +141,7 @@ public class Main {
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
+                    zookeeperMenu();
             }
         } while (choice != 4);
     }
