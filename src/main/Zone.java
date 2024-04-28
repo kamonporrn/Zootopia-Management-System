@@ -32,7 +32,7 @@ public class Zone {
                     break;
                 case 5:
                     System.out.println("Back to main menu.");
-                    return;
+                    Main.userMenu();
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
