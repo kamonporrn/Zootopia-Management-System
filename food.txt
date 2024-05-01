@@ -10,4 +10,4 @@ Carrot,Vegetable
 Grasshopper,Insect
 Crickets,Insect
 Mealworms,Insect
-watermelon,Fruit
+Potato,Vegetable

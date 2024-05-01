@@ -97,5 +97,4 @@ public class FeedingManager {
             e.printStackTrace();
         }
     }
-    
 }

@@ -1,6 +1,6 @@
 package Person;
 
-public class Person {
+public abstract class Person {
     private String username;
     private String password;
 
@@ -24,4 +24,7 @@ public class Person {
     public String getPassword() {
         return password;
     }
+
+    // Abstract method for displaying menu
+    public abstract void displayMenu();
 }
