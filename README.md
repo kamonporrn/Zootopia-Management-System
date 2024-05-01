@@ -30,4 +30,4 @@ The system provides functionality for user to manage the zoo following functiona
 
 ## Class Diagram
 
-(Please insert the class diagram here)
+![UML Logo](Class_diagram.drawio.png)
