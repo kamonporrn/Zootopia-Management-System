@@ -21,8 +21,7 @@ The system provides functionality for user to manage the zoo following functiona
 - Display screen for show information depend on role (Zookeeper/User)
 - The user can see animal information by selecting the animal zone.
 - The user can search  an animal's  name to see animal information.
-- The user can feed animals.
-- The user can add animals. 
+- The user can feed animals. 
 - Zookeeper can manage the animals (Add/Remove)
 - Feeding animal(zookeeper just add/remove and user only can feed animal)
 - Zookeeper can manage zone of the zoo (Add/Remove)
